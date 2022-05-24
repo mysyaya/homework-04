@@ -1,0 +1,371 @@
+/* Основной цвет шрифта  #212121 */
+/* Дополнительный цвет шрифта #757575 */
+/* Белый шрифт #FFFFFF */
+/* Цвет акцента #2196F3 */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --secondary-button-color: #F5F4FA;
+}
+.body {
+    background-color: var(--white-text-color);
+    color: var(--primary-text-color);
+
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+.conteiner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    outline: 2px solid tomato;
+
+}
+/* Шапка */
+
+.head {
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    display: block;
+}
+.head-nav .link,
+.head-cont .link {
+    padding: 20px 0;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.head-link {
+    margin-right: 93px;
+}
+.head-nav {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display: flex;
+}
+.nav .item {
+    margin-right: 50px;
+}
+
+.nav .item:last-child {
+    margin-right: 0;
+}
+.head-cont {
+    display: flex;
+    margin-left: auto;
+}
+
+.head-cont .item {
+    margin-right: 50px;
+}
+
+.head-cont .item:last-child {
+    margin-right: 0
+}
+
+.head-link {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.head-nav .link:hover {
+    color: var(--accent-color);
+}
+.head-nav .link:focus {
+    color: var(--accent-color);
+}
+.logo {
+    color: var(--accent-color);
+}
+
+.link-logo:hover {
+    color: var(--accent-color);
+}
+
+.link-logo:focus {
+    color: var(--accent-color);}
+
+
+.head-cont .link:hover {
+    color: var(--accent-color);
+}
+
+.head-cont .link:focus {
+    color: var(--accent-color);
+}
+.head-cont .link {
+    margin-right: 30px;
+}
+.head-cont .link:last-child {
+    margin-right: 0;
+}
+/* Главная страница, вкладка Студия */
+/* Герой */
+.hero {
+    color: var(--white-text-color);
+    background-color: #2F303A;; 
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.primary-button {
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    min-width: 136px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+.primary-button:focus {}
+
+/* Преимущества компании */
+.title-none{
+    display: none;
+}
+
+.company-advan {
+    display: flex;
+}
+.advan-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.company-advan .item {
+    width: 270px;
+    margin-right: 30px;
+
+}
+.company-advan .item:last-child {
+    margin-right: 0;
+}
+    
+
+.company-advan p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    text-align: left;
+}
+/* Чем мы занимаемся */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.work {
+    display: flex;
+}
+
+.work .item {
+    margin-right: 30px;
+}
+
+.work .item:last-child {
+    margin-right: 0;
+}
+.item img {
+    display: block;
+}
+/* Наша команда */
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team-list {
+    display: flex;
+}
+.team-list img {
+    margin-bottom: 30px;
+}
+
+.team-list .item {
+    margin-right: 30px;
+}
+
+.team-list .item:last-child {
+    margin-right: 0;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+/* Футер */
+.foot {
+    background-color: #000000;
+}
+.foot .conteiner {
+    text-align: left;
+}
+.foot-link {
+    display: inline-block;
+    
+    color: var(--white-text-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+.adress {
+
+    color: var(--white-text-color)
+}
+
+.adress p {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.adress-link {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-bottom: 9px;
+}
+.adress-link:last-child {
+    margin-bottom: 0;
+}
+.foot-link:focus {}
+.adress-link:focus {}
+
+/* Вкладка Портфолио */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filters .item+.item {
+    margin-left: 8px;
+}
+.secondary-button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-button-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62; 
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+    border: 2px solid transparent
+}
+.secondary-button:hover {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+.secondary-button:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap}
+
+.projects .item {
+    /* width: calc((100%-60px)/3); */
+    width: 370px;
+    margin-right: 30px;
+}
+.projects .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.projects-link img {
+    margin-bottom: 20px;
+
+}
+.projects-title {
+    color: var(--title-text-color);
+   
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2; 
+    letter-spacing: 0.06em;
+}
+.projects p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.project-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+.projects-link:focus {
+    
+}
+
